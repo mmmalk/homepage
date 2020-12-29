@@ -5,8 +5,8 @@
       <img src="../../public/layermaskpepper.png" class="brand">
     </b-navbar-brand>
       <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">About me</b-nav-item>
+        <b-nav-item :to="{name:'Home'}">Home</b-nav-item>
+        <b-nav-item to="about">About me</b-nav-item>
         <b-nav-item href="#">CV</b-nav-item>
         <b-nav-item href="#">Contacts</b-nav-item>
       </b-navbar-nav>
@@ -32,3 +32,9 @@
 
 }
 </style>
+
+<script>
+export default {
+  name: "Navbar"
+}
+</script>

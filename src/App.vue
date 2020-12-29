@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Navbar/>
+    <router-view id="content"/>
   </div>
 </template>
 
@@ -23,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#content {
+  margin-top: 60px;
+  padding: 50px;
 }
 </style>
