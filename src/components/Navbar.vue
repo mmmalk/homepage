@@ -6,7 +6,7 @@
     </b-navbar-brand>
       <b-navbar-nav>
         <b-nav-item :to="{name:'Home'}">Home</b-nav-item>
-        <b-nav-item to="about">About me</b-nav-item>
+        <b-nav-item :to="{name: 'About'}">About me</b-nav-item>
         <b-nav-item href="#">CV</b-nav-item>
         <b-nav-item href="#">Contacts</b-nav-item>
       </b-navbar-nav>
