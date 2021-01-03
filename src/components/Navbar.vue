@@ -5,10 +5,16 @@
         <img src="../../public/layermaskpepper.png" class="brand" />
       </b-navbar-brand>
       <b-navbar-nav>
-        <b-nav-item :to="{ name: 'Home' }">Home</b-nav-item>
-        <b-nav-item :to="{ name: 'About' }">About me</b-nav-item>
-        <b-nav-item href="#">CV</b-nav-item>
-        <b-nav-item href="#">Contacts</b-nav-item>
+        <b-nav-item
+          exact
+          active-class="active"
+          class="nav-link"
+          v-for="routes in links"
+          :key="routes.id"
+          :to="routes.path"
+        >
+          {{ routes.name }}
+        </b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
         <b-nav-text>Mikko "malkkis" Malkavaara</b-nav-text>
@@ -28,6 +34,7 @@
         </b-nav-item>
       </b-navbar-nav>
     </b-navbar>
+    <router-view id="content" />
   </div>
 </template>
 
@@ -38,10 +45,35 @@
 .brand {
   width: 40%;
 }
+#content {
+  margin-top: 60px;
+  padding: 50px;
+}
 </style>
 
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      links: [
+        {
+          id: 0,
+          name: "Home",
+          path: "/",
+        },
+        {
+          id: 1,
+          name: "About",
+          path: "/about",
+        },
+        {
+          id: 2,
+          name: "Contact",
+          path: "/contact",
+        },
+      ],
+    };
+  },
 };
 </script>
