@@ -1,5 +1,8 @@
 # homepage
 
+- Todo: language options with i18n
+- Todo: Add links to webapps
+
 ## Project setup
 ```
 npm install
