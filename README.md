@@ -2,6 +2,7 @@
 
 - Todo: language options with i18n
 - Todo: Add links to webapps
+- Todo: add dockerfile
 
 ## Project setup
 ```

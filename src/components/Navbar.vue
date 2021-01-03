@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
+    <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top" role="navigation">
       <b-navbar-brand>
         <img src="../../public/layermaskpepper.png" class="brand" />
       </b-navbar-brand>
