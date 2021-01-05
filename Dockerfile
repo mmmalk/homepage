@@ -5,7 +5,6 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
-RUN vue --version
 RUN ls -la
 
 # production stage
